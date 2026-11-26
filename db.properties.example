@@ -1,0 +1,5 @@
+# Copie ce fichier vers db.properties, puis renseigne tes identifiants PostgreSQL.
+# db.properties est ignoré par Git.
+jakarta.persistence.jdbc.url=jdbc:postgresql://localhost:5432/bibliodakar
+jakarta.persistence.jdbc.user=postgres
+jakarta.persistence.jdbc.password=change-me
