@@ -20,11 +20,7 @@ Le schéma est créé ou mis à jour automatiquement par Hibernate (`hibernate.h
 
 ## Configuration
 
-Les identifiants PostgreSQL ne sont pas versionnés. Copie le fichier d'exemple à la racine du projet :
-
-```powershell
-Copy-Item db.properties.example db.properties
-```
+Les identifiants PostgreSQL ne sont pas versionnés. Copie le fichier d'exemple à la racine du projet 
 
 Puis renseigne `db.properties` :
 
@@ -34,18 +30,9 @@ jakarta.persistence.jdbc.user=ton_utilisateur
 jakarta.persistence.jdbc.password=ton_mot_de_passe
 ```
 
-`db.properties` est ignoré par Git. Ne le versionne jamais.
-
-Le fichier est lu depuis le dossier courant. Lance l'application depuis la racine du projet. Pour utiliser un autre chemin, passe la propriété système `-Ddb.config=chemin/vers/db.properties`.
-
 ## Compiler et lancer
 
-```powershell
-.\mvnw.cmd clean package
-.\mvnw.cmd org.codehaus.mojo:exec-maven-plugin:3.5.0:java "-Dexec.mainClass=isi.diti4.bibliodakar.Main"
-```
-
-Tu peux aussi lancer `isi.diti4.bibliodakar.Main` depuis IntelliJ IDEA.
+ lancer `isi.diti4.bibliodakar.Main` depuis IntelliJ IDEA.
 
 ## Ce que fait la démo
 
